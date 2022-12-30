@@ -31,7 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <cstdint>
 #include "blake2/endian.h"
 
-# fix bug yzs_2022_12_30
+// fix bug yzs_2022_12_30
 #define vcopyq_laneq_f64(a1, __b1, c1, __d1) __extension__ ({ \
   float64x2_t __a1 = (a1); float64x2_t __c1 = (c1); \
   float64_t __c2 = vgetq_lane_f64(__c1, __d1); \
